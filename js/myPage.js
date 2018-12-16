@@ -47,8 +47,18 @@ $(function(){
                             $('.note, .words-04-a').animate({'opacity': 1}, 1000);
                         });
                     });
-                });
-                
+                });  
+            }
+
+            //第四屏到第五屏的滚动动画
+            if(index === 4 && nextIndex === 5){
+                $('.hand-05').animate({'bottom':-20},1000, function(){
+                    $('.t1f-05').animate({'bottom': 65}, 1000, function(){
+                        $('.order-05').animate({'bottom':380},1000, function(){
+                            $('.words-05').addClass('words-05-a');
+                        })
+                    });
+                })
             }
         }
     });

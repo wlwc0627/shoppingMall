@@ -228,6 +228,49 @@
 /* 第五屏动画样式开始 */
 .item5{
     background: #d04759 url('../image/pic_05.png');
+    overflow: hidden;
+}
+.words-05{
+    position: absolute;
+    left: 20%;
+    bottom: 560px;
+}
+.words-05-a{
+    animation: word5 1s linear;
+}
+@keyframes word5{
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+.card-05{
+    position: absolute;
+    left: 20%;
+    bottom: 180px;
+    z-index: 5;
+}
+.order-05{
+    position: absolute;
+    left: 33%;
+    bottom: 260px;
+}
+.t1f-05{
+    position: absolute;
+    left: 25%;
+    bottom: 600px;
+}
+.mouse-05{
+    position: absolute;
+    left: 73%;
+    bottom: 200px;
+}
+.mouse-05-a{
+    opacity: 0;
+}
+.hand-05{
+    position: absolute;
+    left: 71%;
+    bottom: -100px;
 }
 /* 第五屏动画样式结束 */
 
