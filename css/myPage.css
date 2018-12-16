@@ -55,6 +55,7 @@
 /* 第二屏动画样式开始 */
 .item2{
     background: #84a2d4 url('../image/pic_02.png') no-repeat center bottom;
+    z-index: 2;
 }
 .computer{
     position: absolute; 
@@ -94,18 +95,74 @@
 }
 .words-01, .words-02{
     position: absolute;
-    top: 60px;
+    bottom: 540px;
     left: 50%;
     transform: translateX(-50%);
 }
 .words-02{
     opacity: 0;
 }
+.shirt-02-1{
+    position: absolute;
+    bottom: 340px;
+    left: 385px;
+    width: 107px;
+    display: none;
+}
+.cover{
+    position: absolute;
+    left: 384px;
+    bottom: 325px;
+    background: #fff;
+    width: 108px; 
+    height: 105px;
+    z-index: 3;
+    display: none;
+}
 /* 第二屏动画样式结束 */
 
 /* 第三屏动画样式开始 */
 .item3{
-    background: #ef67d4;
+    background: #ef674d;
+}
+.main{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 480px;
+    background: url('../image/main.png') no-repeat center center;
+}
+.select{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 310px;
+    height: 250px;
+
+}
+.img-01{
+    position: absolute;
+    top: 0;
+}
+.img-01-a{
+    opacity: 0;
+}
+.btn-01{
+    position: absolute;
+    bottom: 15px;
+}
+.btn-01-a{
+    opacity: 0;
+}
+.shirt-02, 
+.t1f{
+    position: absolute;
+    bottom: 180px;
+    left: 114px;
+    display: none;
+    z-index: 10;
 }
 /* 第三屏动画样式结束 */
 
