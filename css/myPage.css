@@ -1,0 +1,140 @@
+/* 为8个页面分别设置背景色 */
+/* 第一屏动画样式开始 */
+.item1{
+    background: #fadd67 url('../image/pic_01.png') no-repeat center bottom;
+}
+.fly{
+    position: absolute;
+    top: 10%;
+    right: 20%;
+}
+/* 为上类名为fly的图片设置动画开始 */
+.updown{
+    /* linear表示匀速运动 */
+    /* infinite表示不限制动画的次数 */
+    animation: fly 3s linear infinite;
+}
+@keyframes fly{
+    0%{
+        top: 10%;
+    }
+    50%{
+        top: 20%;
+    }
+    100%{
+        top: 10%;
+    }
+}
+/* 为上类名为fly的图片设置动画结束 */
+
+/* 为类名为shirt01的元素设置动画开始 */
+.shirt01{
+    position: absolute;
+    top: 21%;
+    left: 35%;
+}
+.shirt01-updown{
+    animation: shirt01 1.5s linear infinite;
+}
+@keyframes shirt01{
+    50%{
+        top: 25%;
+    }
+    100%{
+        top: 21%;
+    }
+}
+
+.goods{
+    position: absolute;
+    top: 32%;
+    left: 20%;
+}
+/* 第一屏动画样式结束 */
+
+/* 第二屏动画样式开始 */
+.item2{
+    background: #84a2d4 url('../image/pic_02.png') no-repeat center bottom;
+}
+.computer{
+    position: absolute; 
+    width: 990px;
+    height:500px;
+    background: rgba(0, 0, 0, .1);
+    left: 50%;
+    transform: translateX(-50%);    /* 向左平移自身宽度的50% */
+    bottom: 0;
+}
+.search{
+    width: 222px;
+    height: 45px;
+    background: url('../image/search.png') no-repeat;
+    position: absolute;
+    right: -30px;
+    bottom: 300px;
+}
+.search-words{
+    position: absolute;
+    right: 32px;
+    top: 5px;
+    opacity: 0;
+}
+/* 第二屏动画样式结束 */
+
+/* 第三屏动画样式开始 */
+.item3{
+    background: #ef67d4;
+}
+/* 第三屏动画样式结束 */
+
+/* 第四屏动画样式开始 */
+.item4{
+    background: #fed url('../image/pic_04.png') no-repeat center bottom;
+}
+/* 第四屏动画样式结束 */
+
+/* 第五屏动画样式开始 */
+.item5{
+    background: #d04759 url('../image/pic_05.png');
+}
+/* 第五屏动画样式结束 */
+
+/* 第六屏动画样式开始 */
+.item6{
+    background: #84d9ed url('../image/pic_06.png') no-repeat 25% 100%; 
+}
+/* 第六屏动画样式结束 */
+
+/* 第七屏动画样式开始 */
+.item7{
+    background: #8ac060 url('../image/pic_07.png') no-repeat 50% 100%;
+}
+/* 第七屏动画样式结束 */
+
+/* 第八屏动画样式开始 */
+.item8{
+    background: url('../image/pic_08.png');
+}
+/* 第八屏动画样式结束 */
+
+/* 右侧导航小圆点设置样式 */
+/* !important可设置样式显示的权重，即权重最高 */
+#fp-nav ul li a span{
+    background: rgb(20, 55, 252)!important;
+}
+
+/* 设置右上角的购物中心图标 */
+.go{
+    z-index: 2;
+    position: fixed;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    top: 5%;
+    right: 5%;
+}
+.go:hover{
+    border: 1px solid rgb(219, 185, 185);
+}
