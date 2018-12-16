@@ -55,7 +55,7 @@
 /* 第二屏动画样式开始 */
 .item2{
     background: #84a2d4 url('../image/pic_02.png') no-repeat center bottom;
-    z-index: 2;
+    z-index: 5;
 }
 .computer{
     position: absolute; 
@@ -124,6 +124,7 @@
 /* 第三屏动画样式开始 */
 .item3{
     background: #ef674d;
+    z-index: 3;
 }
 .main{
     position: absolute;
@@ -169,6 +170,58 @@
 /* 第四屏动画样式开始 */
 .item4{
     background: #fed url('../image/pic_04.png') no-repeat center bottom;
+}
+.cloud{
+    position: absolute;
+    left: 50%;
+    bottom: 500px;
+}
+.cloud-back1{
+    animation: cloud 60s linear infinite;
+}
+/*定义云彩运动的动画*/
+@keyframes cloud{
+    50%{
+        left: 10%;
+    }
+    100%{
+        left: 50%;
+    }
+}
+.words-04{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 500px;
+}
+.words-04-a{
+    opacity: 0;
+}
+.car{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+}
+.car-img{
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.note{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 170px;
+    opacity: 0;
+}
+.info{
+    position: absolute;
+    bottom: 165px;
+    left: 55px;
 }
 /* 第四屏动画样式结束 */
 

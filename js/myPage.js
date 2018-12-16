@@ -39,7 +39,16 @@ $(function(){
             //第三屏到第四屏间的滚动动画
             if(index === 3 && nextIndex === 4){
                 $('.shirt-02-1').hide();
-                $('.t1f').show();
+                $('.car-img').hide();
+                $('.t1f').show().animate({"bottom":-(k - 200),"left": 250}, 2000, function(){
+                    $('.t1f').animate({"opacity": 0}, 100, function(){
+                        $('.car-img').show();
+                        $('.car').animate({"left": '150%'}, 5000, 'easeInElastic', function(){
+                            $('.note, .words-04-a').animate({'opacity': 1}, 1000);
+                        });
+                    });
+                });
+                
             }
         }
     });
