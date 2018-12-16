@@ -60,7 +60,6 @@
     position: absolute; 
     width: 990px;
     height:500px;
-    background: rgba(0, 0, 0, .1);
     left: 50%;
     transform: translateX(-50%);    /* 向左平移自身宽度的50% */
     bottom: 0;
@@ -72,11 +71,34 @@
     position: absolute;
     right: -30px;
     bottom: 300px;
+    display: none;
 }
 .search-words{
     position: absolute;
-    right: 32px;
-    top: 5px;
+    right: 30px;
+    top: 2px;
+    opacity: 0;
+}
+.search-02-1{
+    position: absolute;
+    bottom: 300px;
+    right: 380px;
+    display: none;
+}
+.goods-01-1{
+    width: 200px;
+    position: absolute;
+    right: 270px;
+    bottom: 210px;
+    display: none;
+}
+.words-01, .words-02{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.words-02{
     opacity: 0;
 }
 /* 第二屏动画样式结束 */
