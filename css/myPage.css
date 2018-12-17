@@ -274,6 +274,14 @@
     left: 71%;
     bottom: -100px;
 }
+.cover-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 /* 第五屏动画样式结束 */
 
 /* 第六屏动画样式开始 */
@@ -357,7 +365,7 @@
     margin-left: -295px;
     width: 0;
     height: 20px;
-    background: url(../image/star.png) no-repeat;
+    background: url('../image/star.png') no-repeat;
     background-size: 97px;
 }
 .good-07 {
