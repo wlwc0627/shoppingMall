@@ -203,6 +203,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 500px;
+    z-index: 12;
 }
 .car-img{
     position: absolute;
@@ -228,7 +229,6 @@
 /* 第五屏动画样式开始 */
 .item5{
     background: #d04759 url('../image/pic_05.png');
-    overflow: hidden;
 }
 .words-05{
     position: absolute;
@@ -247,7 +247,7 @@
     position: absolute;
     left: 20%;
     bottom: 180px;
-    z-index: 5;
+    z-index: 6;
 }
 .order-05{
     position: absolute;
@@ -258,6 +258,8 @@
     position: absolute;
     left: 25%;
     bottom: 600px;
+    display: none;
+    z-index: 5;
 }
 .mouse-05{
     position: absolute;
@@ -276,13 +278,94 @@
 
 /* 第六屏动画样式开始 */
 .item6{
-    background: #84d9ed url('../image/pic_06.png') no-repeat 25% 100%; 
+	background: #84d9ed url('../image/pic_06.png') no-repeat 25% 100%;
+}
+.box-06 {
+	position: absolute;
+	left:123px;
+	bottom: 500px;
+	z-index: 50;
+}
+.car-06 {
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	z-index: 60;
+}
+.cloud-06 {
+	position: absolute;
+	left: 50%;
+	bottom: 500px;
+	animation: cloud6 30s;
+}
+@keyframes cloud6 {
+	50% {
+		left: 10%;
+	}
+}
+
+.pop-06 {
+	position: absolute;
+	bottom: 119px;
+	right: 48%;
+	display: none;
+	z-index: 50;
+}
+.boy {
+	right: 50%;
+	bottom: 0;
+	position: absolute;
+	height: 100px;
+}
+.girl {
+	position: absolute;
+	right: 315px;
+	bottom: 116px;
+	height: 123px;
+	display: none;
+	z-index: 50;
+}
+.door {
+	position: absolute;
+	right: 285px;
+	bottom: 116px;
+	opacity: 0;
+}
+.pop-07 {
+	position: absolute;
+	right:445px;
+	bottom: 400px;
+	z-index: 40;
+	display: none;
+}
+.words-06-a {
+	position: absolute;
+	left: 10%;
+	bottom: 479px;
+	display: none;
 }
 /* 第六屏动画样式结束 */
 
 /* 第七屏动画样式开始 */
 .item7{
     background: #8ac060 url('../image/pic_07.png') no-repeat 50% 100%;
+}
+.star {
+	position: absolute;
+    left: 50%;
+    bottom: 439px;
+    margin-left: -295px;
+    width: 0;
+    height: 20px;
+    background: url(../image/star.png) no-repeat;
+    background-size: 97px;
+}
+.good-07 {
+	position: absolute;
+	bottom: 382px;
+    left: 50%;
+    margin-left: -289px;
+    display: none;
 }
 /* 第七屏动画样式结束 */
 
