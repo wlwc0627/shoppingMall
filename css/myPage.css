@@ -1,3 +1,8 @@
+html, body, .section{
+    min-width: 1000px;
+    min-height: 600px;
+}
+
 /* 为8个页面分别设置背景色 */
 /* 第一屏动画样式开始 */
 .item1{
@@ -380,6 +385,30 @@
 /* 第八屏动画样式开始 */
 .item8{
     background: url('../image/pic_08.png');
+}
+.beginShoping {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom:365px;
+}
+.btn-08-a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.again {
+	position: absolute;
+	bottom: 403px;
+	left: 50%;
+	margin-left: 240px;
+	cursor: pointer;
+}
+.hand-08 {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
 }
 /* 第八屏动画样式结束 */
 

@@ -28,7 +28,7 @@ $(function(){
 
         //刚开始滚动屏幕就触发的函数
         onLeave: function(index, nextIndex, direction){
-            if(index === 2 && nextIndex ===3  && flag === true){
+            if(index === 2){
                 $('.shirt-02-1').show().animate({"bottom":-(k-230),"left":260,"width": 207},1000, function(){
                     $('.img-01-a').animate({"opacity":1}, 500, function(){
                         $('.btn-01-a').animate({"opacity":1}, 500);
@@ -105,6 +105,36 @@ $(function(){
                         $(".good-07").show();
                     });
                 }, 2000);
+            }
+
+            if( index === 7 && nextIndex ===8){
+                $(".beginShoping").hover(function() {
+                    $(".btn-08-a").toggle();  //  toggle  显示和隐藏的切换
+                });
+                // 大手跟随鼠标移动  
+                $(document).mousemove(function(event) {
+                        var x = event.pageX - $(".hand-08").width() / 2;  // 获得鼠标在页面中的x坐标
+                        var y = event.pageY + 10;  // 获得鼠标在页面中的y坐标
+
+                        // 手的top 值不能小于 这个大小minY   当前屏幕的高度 K  减去手的高度  449 
+                        var minY = k - 449; 
+                        // 把 鼠标在页面中的坐标 给  hand 大手 left  top 
+                        if(y < minY ) {
+                        y = minY;
+                        }
+                    
+                    $(".hand-08").css({"left": x, "top": y});
+                });
+
+                // 当我们点击 再来一次的 时候， 分两步进行
+                $(".again").click(function(event) {
+                // 1. 返回第1屏幕 
+                    $.fn.fullpage.moveTo(1);
+                    // 2. 所有的动画都复原 就是原来没有看过的样子 
+                    // 核心原理就是  让我们的图片（做动画的元素 清除 行内样式就可以）
+                    // 所有带有动画的div 盒子 添加 move 类名
+                    $("img, .move").attr("style", "");
+                });   
             }
         }
     });
